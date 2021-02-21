@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Video Games</title>
+</head>
+<body>
+    <header id="page-title">
+        <h1>Favourite Video Games</h1>
+    </header>
+    <main id="main-container">
+        <form id="new-item-form">
+            <section id="form-wrapper">
+                <div class="form-item title">
+                    <label for="title" class="labels"><h2>Game Title:</h2></label>
+                    <input type="text" id="title" required>
+                </div>
+
+                <div class="form-item genre">
+                    <label for="genre" class="labels"><h2>Genre:</h2></label>
+                    <input type="text" id="genre" required>
+                </div>
+
+                <div class="form-item creator">
+                    <label for="creator" class="labels"><h2>Company Name:</h2></label>
+                    <input type="text" id="creator" required>
+                </div>
+
+                <section class="form-item rating">
+                    <label for="rating" class="labels"><h2>Rating:</h2></label>
+                    <select id="rating">
+                        <option value="select a rating">Select a rating</option>
+                        <option value="1 star">* . . . .</option>
+                        <option value="2 stars">* * . . .</option>
+                        <option value="3 stars">* * * . .</option>
+                        <option value="5 stars">* * * * .</option>
+                        <option value="5 stars">* * * * *</option>
+                    </select>
+                </section>
+                <section class="complete">
+                    <h2>Completion:</h2>
+                    <div class="complete-inner">
+                        <div>
+                            <label for="completedChoice">Completed</label>
+                            <input type="radio" id="completedChoiceChoice" name="completion" value="completed">
+                        </div>
+
+                        <div>
+                            <label for="incomplete">Incomplete</label>
+                            <input type="radio" id="incomplete" name="completion" value="incomplete">
+                        </div>
+                        
+                        <div>
+                            <label for="replaying">Re-playing: </label>
+                            <input type="radio" id="replaying" name="completion" value="replaying">  
+                        </div>
+
+                    </div>
+                </section>
+                <section class="submit-button">
+                    <input type="submit" value="Add to Games">
+                </section>
+            </section>
+            
+        </form>
+    </main>
+    <article id="list-container">
+        <section class="listing" >
+            <h1>My Video Games</h1>
+            <div id="inner-list">
+                <ul id="my-video-games"> </ul>  
+            </div>
+            
+        </section>
+        <section class="delete-button">
+            <button id="delete-all">Delete All</button>
+        </section>
+    </article>
+
+</body>
+</html>
